@@ -315,15 +315,7 @@ function stopDrag(){
                   <img src="img/pencil.png"  onclick="selectTool('pencil')" />
                   <img src="img/line.png"  onclick="selectTool('line')" />
                 </span>
-              </div>              
-              <div class="row">
-                  <span class="cell">
-                    <img src="img/undo.png" onclick="undo()"/>
-                    <img src="img/redo.png" onclick="redo()"/>
-                  </span>
-                </div>
-
-                  
+              </div>  
             </div>
             
           </div>
@@ -382,22 +374,11 @@ function stopDrag(){
           <INPUT type="file" id="load_filename" value="Load" onChange="loadFile()" />
           <div>Title <input id="title" size="15" /></div>
           <div>
-            <a id="saveImage" download="image.png">
-                <INPUT type="button" value="Save" onClick="saveImage()" />
+            <a id="saveImage" download="image.png" name="title">
+                <INPUT type="submit" value="Save" onClick="saveImage()" />
             </a>
             <INPUT type="button" value="Clear" onClick="initPage()" />
-            <INPUT type="button" value="History" onClick="showHistory()" />
           </div>
-          <div>
-            <input type="button" value="Save as Json" onClick="SaveAsJson()" />
-            <input type="button" value="Save as Txt" onClick="SaveAsTxt()" />
-          </div>
-          <div>
-            <textarea id="history" cols="40" rows="37" style="display: none;"></textarea>
-          </div>
-          <div id="command">
-          </div>
-              <INPUT type="button" value="Redraw" onClick="reDrawCanvas()" />
         </span>   
         </div>     
      
